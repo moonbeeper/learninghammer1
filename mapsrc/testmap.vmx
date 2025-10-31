@@ -3522,7 +3522,7 @@ entity
 {
 	"id" "11"
 	"classname" "info_player_start"
-	"angles" "0 0 0"
+	"angles" "0 270 0"
 	"spawnflags" "0"
 	"origin" "-440 440 64"
 	editor

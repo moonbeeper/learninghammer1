@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3hf2yyybu11a"]
+
+[ext_resource type="Script" uid="uid://b0v0gn7t4kxpk" path="res://entities/info_player_start.gd" id="1_5q65i"]
+[ext_resource type="PackedScene" uid="uid://cggqlwb1qdsem" path="res://nodes/player.tscn" id="2_26bgq"]
+
+[node name="info_player_start" type="Node3D"]
+script = ExtResource("1_5q65i")
+player_scene = ExtResource("2_26bgq")
+metadata/_custom_type_script = "uid://3tjpx1fv0g56"
