@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://q3httprcal8o"]
+
+[ext_resource type="Script" uid="uid://crunusye65gi4" path="res://addons/godotvmf/src/vmf_runtime_controller.gd" id="1_4xfga"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_4xfga")
+maps_folder = "res://mapsrc"
+hammer_setup = "In hammer do following steps:
+	1. Open Tools -> Options -> Build programs tab. In the \"Game Executable\" specify path to the Godot Engine launcher.
+	2. Open Run Map window (F9).
+	3. Click \"Edit\" and add new configuration.
+	4. Select the created configuration in Configurations field
+	5. Click \"New\" and add into \"Command\" field this - $game_exe
+	6. Add into \"Parameters\" field this
+	 --path $gamedir scenes/map.tscn --vmf $file"
+metadata/_custom_type_script = "uid://crunusye65gi4"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9627342, 0.27044922, 0, -0.27044922, 0.9627342, 0, 1.6192569, 0)
