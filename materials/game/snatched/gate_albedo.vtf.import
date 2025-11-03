@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://dgrybk30tf1kq"
+path="res://.godot/imported/gate_albedo.vtf-62edaa527132f471891f1bd622c03fb8.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/snatched/gate_albedo.vtf"
+dest_files=["res://.godot/imported/gate_albedo.vtf-62edaa527132f471891f1bd622c03fb8.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

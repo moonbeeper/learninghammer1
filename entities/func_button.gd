@@ -2,9 +2,9 @@
 class_name func_button extends VMFEntityNode
 
 func _entity_setup(_vmf_entity: VMFEntity) -> void:
-	$body/mesh.mesh = create_mesh_from_convex_shape(get_entity_convex_shape())
+	var mesh = get_mesh()
+	$body/mesh.mesh = get_mesh()
 	$body/collision.shape = get_entity_convex_shape();
-
 
 func OnPressed(_param = null):
 	trigger_output("OnPressed")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://68iac63pp2bn"]
+
+[ext_resource type="Script" uid="uid://mmol4e1ibx42" path="res://entities/func_brush.gd" id="1_rb83t"]
+
+[node name="func_brush" type="Node3D"]
+script = ExtResource("1_rb83t")
+
+[node name="body" type="StaticBody3D" parent="."]
+
+[node name="mesh" type="MeshInstance3D" parent="body"]
+skeleton = NodePath("../..")
+
+[node name="collision" type="CollisionShape3D" parent="body"]

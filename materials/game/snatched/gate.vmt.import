@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://bjnavvyaqwasg"
+path="res://.godot/imported/gate.vmt-f3f831d3e1e89426347dca1e779806d0.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/snatched/gate.vmt"
+dest_files=["res://.godot/imported/gate.vmt-f3f831d3e1e89426347dca1e779806d0.vmt.res"]
+
+[params]
+

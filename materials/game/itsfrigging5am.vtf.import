@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://ct7n6luu0vdqh"
+path="res://.godot/imported/itsfrigging5am.vtf-88913275da0bd0f7b6e5222bed1e6c4d.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/itsfrigging5am.vtf"
+dest_files=["res://.godot/imported/itsfrigging5am.vtf-88913275da0bd0f7b6e5222bed1e6c4d.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

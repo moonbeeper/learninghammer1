@@ -9,7 +9,6 @@ metadata/_custom_type_script = "uid://3tjpx1fv0g56"
 [node name="body" type="StaticBody3D" parent="."]
 
 [node name="mesh" type="MeshInstance3D" parent="body"]
-visible = false
 cast_shadow = 0
 skeleton = NodePath("../..")
 
