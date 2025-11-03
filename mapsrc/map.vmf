@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "233"
+	"mapversion" "235"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "233"
+	"mapversion" "235"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -28108,7 +28108,7 @@ entity
 	"on_screen_icon" "2"
 	"spawnflags" "0"
 	"targetname" "nice_lighting"
-	"timeout" "3"
+	"timeout" "2"
 	"origin" "800 240 -16"
 	editor
 	{
@@ -28122,7 +28122,7 @@ entity
 {
 	"id" "14785"
 	"classname" "trigger_once"
-	"origin" "936 528 -48"
+	"origin" "968 608 -48"
 	"spawnflags" "1"
 	connections
 	{
@@ -28134,13 +28134,13 @@ entity
 		side
 		{
 			"id" "9533"
-			"plane" "(704 544 48) (1168 544 48) (1168 512 48)"
+			"plane" "(640 624 48) (1296 624 48) (1296 592 48)"
 			vertices_plus
 			{
-				"v" "704 544 48"
-				"v" "1168 544 48"
-				"v" "1168 512 48"
-				"v" "704 512 48"
+				"v" "640 624 48"
+				"v" "1296 624 48"
+				"v" "1296 592 48"
+				"v" "640 592 48"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -28152,13 +28152,13 @@ entity
 		side
 		{
 			"id" "9532"
-			"plane" "(704 512 -144) (1168 512 -144) (1168 544 -144)"
+			"plane" "(640 592 -144) (1296 592 -144) (1296 624 -144)"
 			vertices_plus
 			{
-				"v" "704 512 -144"
-				"v" "1168 512 -144"
-				"v" "1168 544 -144"
-				"v" "704 544 -144"
+				"v" "640 592 -144"
+				"v" "1296 592 -144"
+				"v" "1296 624 -144"
+				"v" "640 624 -144"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -28170,13 +28170,13 @@ entity
 		side
 		{
 			"id" "9531"
-			"plane" "(704 544 48) (704 512 48) (704 512 -144)"
+			"plane" "(640 624 48) (640 592 48) (640 592 -144)"
 			vertices_plus
 			{
-				"v" "704 544 48"
-				"v" "704 512 48"
-				"v" "704 512 -144"
-				"v" "704 544 -144"
+				"v" "640 624 48"
+				"v" "640 592 48"
+				"v" "640 592 -144"
+				"v" "640 624 -144"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 -0] 0.25"
@@ -28188,13 +28188,13 @@ entity
 		side
 		{
 			"id" "9530"
-			"plane" "(1168 544 -144) (1168 512 -144) (1168 512 48)"
+			"plane" "(1296 624 -144) (1296 592 -144) (1296 592 48)"
 			vertices_plus
 			{
-				"v" "1168 544 -144"
-				"v" "1168 512 -144"
-				"v" "1168 512 48"
-				"v" "1168 544 48"
+				"v" "1296 624 -144"
+				"v" "1296 592 -144"
+				"v" "1296 592 48"
+				"v" "1296 624 48"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 -0] 0.25"
@@ -28206,13 +28206,13 @@ entity
 		side
 		{
 			"id" "9529"
-			"plane" "(1168 544 48) (704 544 48) (704 544 -144)"
+			"plane" "(1296 624 48) (640 624 48) (640 624 -144)"
 			vertices_plus
 			{
-				"v" "1168 544 48"
-				"v" "704 544 48"
-				"v" "704 544 -144"
-				"v" "1168 544 -144"
+				"v" "1296 624 48"
+				"v" "640 624 48"
+				"v" "640 624 -144"
+				"v" "1296 624 -144"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
@@ -28224,13 +28224,13 @@ entity
 		side
 		{
 			"id" "9528"
-			"plane" "(1168 512 -144) (704 512 -144) (704 512 48)"
+			"plane" "(1296 592 -144) (640 592 -144) (640 592 48)"
 			vertices_plus
 			{
-				"v" "1168 512 -144"
-				"v" "704 512 -144"
-				"v" "704 512 48"
-				"v" "1168 512 48"
+				"v" "1296 592 -144"
+				"v" "640 592 -144"
+				"v" "640 592 48"
+				"v" "1296 592 48"
 			}
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"

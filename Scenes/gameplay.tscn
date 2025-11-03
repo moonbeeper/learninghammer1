@@ -217,7 +217,7 @@ points = PackedVector3Array(0.32000017, 1.9200003, 1.28, -0.32000017, 1.9200003,
 points = PackedVector3Array(3.2000008, 2.2399995, 0.32, 3.2000008, 2.2399995, -0.32, -3.1999998, 2.2399995, 0.32, 3.2000008, -2.24, 0.32, 3.2000008, -2.24, -0.32, -3.1999998, 2.2399995, -0.32, -3.1999998, -2.24, 0.32, -3.1999998, -2.24, -0.32)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2x1bi"]
-points = PackedVector3Array(4.6399994, 1.9196241, 0.3199997, 4.6399994, 1.9196241, -0.32000065, -4.6399994, 1.9196241, 0.3199997, 4.6399994, -1.9199998, 0.3199997, 4.6399994, -1.9199998, -0.32000065, -4.6399994, 1.9196241, -0.32000065, -4.6399994, -1.9199998, 0.3199997, -4.6399994, -1.9199998, -0.32000065)
+points = PackedVector3Array(6.5600014, 1.9196241, 0.3199997, 6.5600014, 1.9196241, -0.3199997, -6.5599995, 1.9196241, 0.3199997, 6.5600014, -1.9199998, 0.3199997, 6.5600014, -1.9199998, -0.3199997, -6.5599995, 1.9196241, -0.3199997, -6.5599995, -1.9199998, 0.3199997, -6.5599995, -1.9199998, -0.3199997)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rqnht"]
 shader = ExtResource("11_525vb")
@@ -270,8 +270,8 @@ shader_parameter/cirrus_sky_tint_fade = 0.5
 shader_parameter/cirrus_intensity = 10.0
 shader_parameter/cirrus_size = 1.0
 shader_parameter/cirrus_uv = Vector2(0.16, 0.11)
-shader_parameter/cirrus_position1 = Vector2(0.68339604, 0.68339604)
-shader_parameter/cirrus_position2 = Vector2(0.68339604, 0.68339604)
+shader_parameter/cirrus_position1 = Vector2(0.18211018, 0.18211018)
+shader_parameter/cirrus_position2 = Vector2(0.18211018, 0.18211018)
 shader_parameter/cirrus_day_color = Color(0.824, 0.875, 1, 1)
 shader_parameter/cirrus_horizon_light_color = Color(0.98, 0.43, 0.15, 1)
 shader_parameter/cirrus_night_color = Color(0.09, 0.094, 0.129, 1)
@@ -284,7 +284,7 @@ shader_parameter/cumulus_noise_freq = 2.7
 shader_parameter/cumulus_sky_tint_fade = 0.0
 shader_parameter/cumulus_intensity = 0.6
 shader_parameter/cumulus_size = 0.5
-shader_parameter/cumulus_position = Vector2(68.50402, 68.50402)
+shader_parameter/cumulus_position = Vector2(70.92708, 70.92708)
 shader_parameter/cumulus_texture = ExtResource("13_t4x03")
 shader_parameter/cumulus_day_color = Color(0.823529, 0.87451, 1, 1)
 shader_parameter/cumulus_horizon_light_color = Color(0.98, 0.43, 0.15, 1)
@@ -351,7 +351,7 @@ metadata/surface_prop = "tool_compilenodraw"
 [node name="collision" type="CollisionShape3D" parent="VMFNode/Geometry/surface_prop_tool_compilenodraw"]
 shape = ExtResource("5_hbo4f")
 
-[node name="button267450835108085" parent="VMFNode/Geometry" instance=ExtResource("6_3v6uj")]
+[node name="button279118130550048" parent="VMFNode/Geometry" instance=ExtResource("6_3v6uj")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 20.8, 2.46, 2.562)
 surface_material_override/0 = ExtResource("7_3v6uj")
 
@@ -5093,7 +5093,7 @@ flags = 1
 shape = SubResource("ConvexPolygonShape3D_krsgc")
 
 [node name="trigger_once_14785" parent="VMFNode/Entities/triggers" instance=ExtResource("29_yjd84")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.72, -0.96, -10.559999)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.359999, -0.96, -12.16)
 entity = {
 "classname": "trigger_once",
 "connections": {
@@ -5106,7 +5106,7 @@ entity = {
 "visgroupshown": 1
 },
 "id": 14785,
-"origin": Vector3(936, 528, -48),
+"origin": Vector3(968, 608, -48),
 "solid": {
 "editor": {
 "color": Vector3(220, 30, 220),
@@ -5119,9 +5119,9 @@ entity = {
 "lightmapscale": 16,
 "material": "TOOLS/TOOLSTRIGGER",
 "plane": {
-"points": [Vector3(704, 544, 48), Vector3(1168, 544, 48), Vector3(1168, 512, 48)],
+"points": [Vector3(640, 624, 48), Vector3(1296, 624, 48), Vector3(1296, 592, 48)],
 "value": Plane(0, 0, 1, 48),
-"vecsum": Vector3(3040, 1600, 144)
+"vecsum": Vector3(3232, 1840, 144)
 },
 "rotation": 0,
 "smoothing_groups": 0,
@@ -5140,16 +5140,16 @@ entity = {
 "z": 0.0
 },
 "vertices_plus": {
-"v": [Vector3(704, 544, 48), Vector3(1168, 544, 48), Vector3(1168, 512, 48), Vector3(704, 512, 48)]
+"v": [Vector3(640, 624, 48), Vector3(1296, 624, 48), Vector3(1296, 592, 48), Vector3(640, 592, 48)]
 }
 }, {
 "id": 9532,
 "lightmapscale": 16,
 "material": "TOOLS/TOOLSTRIGGER",
 "plane": {
-"points": [Vector3(704, 512, -144), Vector3(1168, 512, -144), Vector3(1168, 544, -144)],
+"points": [Vector3(640, 592, -144), Vector3(1296, 592, -144), Vector3(1296, 624, -144)],
 "value": Plane(0, 0, -1, 144),
-"vecsum": Vector3(3040, 1568, -432)
+"vecsum": Vector3(3232, 1808, -432)
 },
 "rotation": 0,
 "smoothing_groups": 0,
@@ -5168,16 +5168,16 @@ entity = {
 "z": 0.0
 },
 "vertices_plus": {
-"v": [Vector3(704, 512, -144), Vector3(1168, 512, -144), Vector3(1168, 544, -144), Vector3(704, 544, -144)]
+"v": [Vector3(640, 592, -144), Vector3(1296, 592, -144), Vector3(1296, 624, -144), Vector3(640, 624, -144)]
 }
 }, {
 "id": 9531,
 "lightmapscale": 16,
 "material": "TOOLS/TOOLSTRIGGER",
 "plane": {
-"points": [Vector3(704, 544, 48), Vector3(704, 512, 48), Vector3(704, 512, -144)],
-"value": Plane(-1, 0, 0, -704),
-"vecsum": Vector3(2112, 1568, -48)
+"points": [Vector3(640, 624, 48), Vector3(640, 592, 48), Vector3(640, 592, -144)],
+"value": Plane(-1, 0, 0, -640),
+"vecsum": Vector3(1920, 1808, -48)
 },
 "rotation": 0,
 "smoothing_groups": 0,
@@ -5196,16 +5196,16 @@ entity = {
 "z": -1.0
 },
 "vertices_plus": {
-"v": [Vector3(704, 544, 48), Vector3(704, 512, 48), Vector3(704, 512, -144), Vector3(704, 544, -144)]
+"v": [Vector3(640, 624, 48), Vector3(640, 592, 48), Vector3(640, 592, -144), Vector3(640, 624, -144)]
 }
 }, {
 "id": 9530,
 "lightmapscale": 16,
 "material": "TOOLS/TOOLSTRIGGER",
 "plane": {
-"points": [Vector3(1168, 544, -144), Vector3(1168, 512, -144), Vector3(1168, 512, 48)],
-"value": Plane(1, 0, 0, 1168),
-"vecsum": Vector3(3504, 1568, -240)
+"points": [Vector3(1296, 624, -144), Vector3(1296, 592, -144), Vector3(1296, 592, 48)],
+"value": Plane(1, 0, 0, 1296),
+"vecsum": Vector3(3888, 1808, -240)
 },
 "rotation": 0,
 "smoothing_groups": 0,
@@ -5224,16 +5224,16 @@ entity = {
 "z": -1.0
 },
 "vertices_plus": {
-"v": [Vector3(1168, 544, -144), Vector3(1168, 512, -144), Vector3(1168, 512, 48), Vector3(1168, 544, 48)]
+"v": [Vector3(1296, 624, -144), Vector3(1296, 592, -144), Vector3(1296, 592, 48), Vector3(1296, 624, 48)]
 }
 }, {
 "id": 9529,
 "lightmapscale": 16,
 "material": "TOOLS/TOOLSTRIGGER",
 "plane": {
-"points": [Vector3(1168, 544, 48), Vector3(704, 544, 48), Vector3(704, 544, -144)],
-"value": Plane(0, 1, 0, 544),
-"vecsum": Vector3(2576, 1632, -48)
+"points": [Vector3(1296, 624, 48), Vector3(640, 624, 48), Vector3(640, 624, -144)],
+"value": Plane(0, 1, 0, 624),
+"vecsum": Vector3(2576, 1872, -48)
 },
 "rotation": 0,
 "smoothing_groups": 0,
@@ -5252,16 +5252,16 @@ entity = {
 "z": -1.0
 },
 "vertices_plus": {
-"v": [Vector3(1168, 544, 48), Vector3(704, 544, 48), Vector3(704, 544, -144), Vector3(1168, 544, -144)]
+"v": [Vector3(1296, 624, 48), Vector3(640, 624, 48), Vector3(640, 624, -144), Vector3(1296, 624, -144)]
 }
 }, {
 "id": 9528,
 "lightmapscale": 16,
 "material": "TOOLS/TOOLSTRIGGER",
 "plane": {
-"points": [Vector3(1168, 512, -144), Vector3(704, 512, -144), Vector3(704, 512, 48)],
-"value": Plane(0, -1, 0, -512),
-"vecsum": Vector3(2576, 1536, -240)
+"points": [Vector3(1296, 592, -144), Vector3(640, 592, -144), Vector3(640, 592, 48)],
+"value": Plane(0, -1, 0, -592),
+"vecsum": Vector3(2576, 1776, -240)
 },
 "rotation": 0,
 "smoothing_groups": 0,
@@ -5280,7 +5280,7 @@ entity = {
 "z": -1.0
 },
 "vertices_plus": {
-"v": [Vector3(1168, 512, -144), Vector3(704, 512, -144), Vector3(704, 512, 48), Vector3(1168, 512, 48)]
+"v": [Vector3(1296, 592, -144), Vector3(640, 592, -144), Vector3(640, 592, 48), Vector3(1296, 592, 48)]
 }
 }]
 },
