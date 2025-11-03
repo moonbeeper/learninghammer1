@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pt61qgni35g0"]
+
+[ext_resource type="Texture2D" uid="uid://ckpvse76pxiv8" path="res://materials/game/hud/inffoof.png" id="1_f32cf"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_f32cf")

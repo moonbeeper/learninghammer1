@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://qwmb2vnyi1e7"
+path="res://.godot/imported/inffoof.vmt-14f854613be90dd6dfb149ec81c98891.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/hud/inffoof.vmt"
+dest_files=["res://.godot/imported/inffoof.vmt-14f854613be90dd6dfb149ec81c98891.vmt.res"]
+
+[params]
+

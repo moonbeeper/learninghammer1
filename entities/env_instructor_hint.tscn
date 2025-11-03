@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://5c2yphii3kre"]
+
+[ext_resource type="Script" uid="uid://egt0nxjfy1n1" path="res://entities/env_instructor_hint.gd" id="1_0cav8"]
+
+[node name="EnvInstructorHint" type="Node3D"]
+script = ExtResource("1_0cav8")
+metadata/_custom_type_script = "uid://3tjpx1fv0g56"

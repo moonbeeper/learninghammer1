@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=4 uid="uid://djwdohhp2c2fp"]
+[gd_scene load_steps=70 format=4 uid="uid://djwdohhp2c2fp"]
 
 [ext_resource type="Script" uid="uid://dyyoq230q23sh" path="res://addons/godotvmf/src/vmf_node.gd" id="1_ct7aa"]
 [ext_resource type="ArrayMesh" uid="uid://5y8dycbtjnsp" path="res://geometry/map_vmf_import.mesh" id="2_ocj2s"]
@@ -37,10 +37,12 @@
 [ext_resource type="ArrayMesh" uid="uid://btjv5ull8bcu4" path="res://old_retro_junk_yup_packbash/box.obj" id="21_525vb"]
 [ext_resource type="Material" uid="uid://44jv4o1uviyd" path="res://materials/game/snatched/gate.tres" id="22_37dvx"]
 [ext_resource type="PackedScene" uid="uid://dgwt8htlo4a8w" path="res://entities/prop_physics.tscn" id="22_s1tv7"]
-[ext_resource type="Material" uid="uid://d4gxtavpq3ag8" path="res://materials/tools/toolstrigger.vmt" id="23_p5dy6"]
 [ext_resource type="PackedScene" uid="uid://68iac63pp2bn" path="res://entities/func_brush.tscn" id="24_81iov"]
 [ext_resource type="Material" uid="uid://ddeah58on68j0" path="res://materials/game/itsfriggin5amgoddammitaaaaaaaaaa.tres" id="25_slt2r"]
+[ext_resource type="PackedScene" uid="uid://5c2yphii3kre" path="res://entities/env_instructor_hint.tscn" id="28_slt2r"]
+[ext_resource type="PackedScene" uid="uid://dwrdf8e68d24f" path="res://entities/trigger_once.tscn" id="29_yjd84"]
 [ext_resource type="LightmapGIData" uid="uid://caoe2q8pdyf1j" path="res://scenes/gameplay.lmbake" id="30_3v6uj"]
+[ext_resource type="Script" uid="uid://sptq7qcwouug" path="res://scenes/canvas_layer.gd" id="42_slt2r"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yjd84"]
 _surfaces = [{
@@ -152,26 +154,10 @@ blend_shape_mode = 0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_npgxv"]
 points = PackedVector3Array(0.07999992, 1.04, 0.64000034, -0.07999992, 1.04, 0.64000034, 0.07999992, -1.04, 0.64000034, 0.07999992, 1.04, -0.54866034, -0.07999992, 1.04, -0.54866034, -0.07999992, -1.04, 0.64000034, 0.07999992, -1.04, -0.54866034, 0, 1.04, -0.6399994, -0.07999992, -1.04, -0.54866034, 0, -1.04, -0.6399994)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_w6xft"]
-_surfaces = [{
-"aabb": AABB(-0.6000004, -0.79999995, -0.15999985, 1.2000008, 1.5999999, 0.3199997),
-"attribute_data": PackedByteArray("/////wCAWEIAAGDC/////wCAZ0IAAGDC/////wCAZ0IAAFzC/////wCAWEIAAFzC/////wCAWEIAAFzC/////wCAZ0IAAFzC/////wCAZ0IAAGDC/////wCAWEIAAGDC/////wAAYEIAAEA//////wAAXEIAAEA//////wAAXEIAALhA/////wAAYEIAALhA/////wAAYEIAALhA/////wAAXEIAALhA/////wAAXEIAAEA//////wAAYEIAAEA//////wCAZ0IAAEA//////wCAWEIAAEA//////wCAWEIAALhA/////wCAZ0IAALhA/////wCAZ0IAALhA/////wCAWEIAALhA/////wCAWEIAAEA//////wCAZ0IAALhA/////wCAWEIAAEA//////wCAZ0IAAEA/"),
-"format": 34359742495,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFwAYABkA"),
-"material": ExtResource("23_p5dy6"),
-"name": "surface_0",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 26,
-"vertex_data": PackedByteArray("oJkZv8zMTD8A1yO+oJkZP8zMTD8A1yO+oJkZP8zMTD8A1yM+oJkZv8zMTD8A1yM+oJkZv8zMTL8A1yM+oJkZP8zMTL8A1yM+oJkZP8zMTL8A1yO+oJkZv8zMTL8A1yO+oJkZv8zMTD8A1yO+oJkZv8zMTD8A1yM+oJkZv8zMTL8A1yM+oJkZv8zMTL8A1yO+oJkZP8zMTL8A1yO+oJkZP8zMTL8A1yM+oJkZP8zMTD8A1yM+oJkZP8zMTD8A1yO+oJkZP8zMTD8A1yO+oJkZv8zMTD8A1yO+oJkZv8zMTL8A1yO+oJkZP8zMTL8A1yO+oJkZP8zMTL8A1yM+oJkZv8zMTL8A1yM+oJkZv8zMTD8A1yM+oJkZP8zMTL8A1yM+oJkZv8zMTD8A1yM+oJkZP8zMTD8A1yM+AID//////78AgP//////vwCA//////+/AID//////78AgAAA////PwCAAAD///8/AIAAAP///z8AgAAA////PwAAAID//wAAAAAAgP//AAAAAACA//8AAAAAAID//wAA//8AgP///////wCA////////AID///////8AgP//////////////P/////////8//////////z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////vw==")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lx1vx"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_w6xft"]
 points = PackedVector3Array(-0.6000004, -0.79999995, -0.15999985, -0.6000004, -0.79999995, 0.15999985, -0.6000004, 0.79984343, -0.15999985, 0.6000004, -0.79999995, -0.15999985, 0.6000004, -0.79999995, 0.15999985, -0.6000004, 0.79984343, 0.15999985, 0.6000004, 0.79984343, -0.15999985, 0.6000004, 0.79984343, 0.15999985)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_kf8tg"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_lx1vx"]
 _surfaces = [{
 "aabb": AABB(-1.9200001, -1.4399998, -0.15999985, 3.8400002, 2.8799999, 0.3199997),
 "attribute_data": PackedByteArray("/////wAAAUEAyFJC/////wAAH0EAyFJC/////wAAH0EAyFZC/////wAAAUEAyFZC/////wAAAUEAyHpC/////wAAH0EAyHpC/////wAAH0EAyHZC/////wAAAUEAyHZC/////wAAAUGrqpG//////wAAAUGrqpG//////wAAAUFVVQ2+/////wAAAUFVVQ2+/////wAAH0FVVQ2+/////wAAH0FVVQ2+/////wAAH0GrqpG//////wAAH0GrqpG//////wAAH0GrqpG//////wAAAUGrqpG//////wAAAUFVVQ2+/////wAAH0FVVQ2+/////wAAH0FVVQ2+/////wAAAUFVVQ2+/////wAAAUGrqpG//////wAAH0FVVQ2+/////wAAAUGrqpG//////wAAH0GrqpG/"),
@@ -187,10 +173,10 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_32tgx"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kf8tg"]
 points = PackedVector3Array(1.9200001, 1.4399998, 0.15999985, 1.9200001, 1.4399998, -0.15999985, -1.9200001, 1.4399998, 0.15999985, 1.9200001, -1.4399998, 0.15999985, 1.9200001, -1.4399998, -0.15999985, -1.9200001, 1.4399998, -0.15999985, -1.9200001, -1.4399998, 0.15999985, -1.9200001, -1.4399998, -0.15999985)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_pnpip"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_32tgx"]
 _surfaces = [{
 "aabb": AABB(-0.15999985, -1.28, -2.5600004, 0.32000017, 2.56, 5.12),
 "attribute_data": PackedByteArray("/////wAAqEEAAADA/////wAAsEEAAADA/////wAAsEEAAIC//////wAAqEEAAIC//////wAAqEEAAIC//////wAAsEEAAIC//////wAAsEEAAADA/////wAAqEEAAADA"),
@@ -218,8 +204,20 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wo4hk"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pnpip"]
 points = PackedVector3Array(0.1346145, -0.003001174, 0.14397684, 0.13305962, 9.313226e-10, 0.15295216, 0.13458815, -0.003001174, 0.15295216, 0.1346145, -0.0120002935, 0.14397684, 0.1346145, -0.003001174, -0.14400512, 0.133086, 9.313226e-10, -0.09900667, 0.13300693, 9.313226e-10, 0.16192749, 0.13458815, -0.0120002935, 0.15295216, 0.13453543, -0.003001174, 0.1618869, 0.13305962, -0.015, 0.15295216, 0.133086, -0.015, -0.09900667, 0.1346145, -0.0120002935, -0.14400512, 0.13453543, -0.003001174, -0.15293983, 0.13305962, 9.313226e-10, -0.14400512, 0.133086, 9.313226e-10, -0.12601386, 0.13255891, 9.313226e-10, 0.1704967, 0.13411379, -0.003001174, 0.17037487, 0.13453543, -0.0120002935, 0.1618869, 0.13300693, -0.015, 0.16192749, 0.133086, -0.015, -0.12601386, 0.13305962, -0.015, -0.14400512, 0.13453543, -0.0120002935, -0.15293983, 0.13298056, 9.313226e-10, -0.15293983, 0.133982, -0.003001174, -0.16126536, 0.13089862, 9.313226e-10, 0.17553264, 0.13255891, -0.003001174, 0.17516711, 0.13411379, -0.0120002935, 0.17037487, 0.13255891, -0.015, 0.1704967, 0.13298056, -0.015, -0.15293983, 0.133982, -0.0120002935, -0.16126536, 0.13240078, 9.313226e-10, -0.16134658, 0.13247985, -0.003001174, -0.16849434, 0.13087228, 9.313226e-10, -0.16881925, 0.12668204, 9.313226e-10, 0.17752263, 0.13060874, -0.003001174, 0.17752263, 0.13255891, -0.0120002935, 0.17516711, 0.13089862, -0.015, 0.17553264, 0.13240078, -0.015, -0.16134658, 0.13087228, -0.015, -0.16881925, 0.13247985, -0.0120002935, -0.16849434, 0.12968636, -0.003001174, -0.17409885, 0.12876397, 9.313226e-10, -0.17300232, 0.119540215, 9.313226e-10, 0.17805058, 0.119540215, -0.003001174, 0.17991877, 0.12660298, -0.003001174, 0.17939079, 0.13060874, -0.0120002935, 0.17752263, 0.12668204, -0.015, 0.17752263, 0.12876397, -0.015, -0.17300232, 0.12968636, -0.0120002935, -0.17409885, 0.12499541, -0.003001174, -0.17746967, 0.12525895, 9.313226e-10, -0.17552029, 0.112082124, 9.313226e-10, 0.17813182, 0.112082124, -0.003001174, 0.17995936, 0.119540215, -0.0120002935, 0.17991877, 0.12660298, -0.0120002935, 0.17939079, 0.119540215, -0.015, 0.17805058, 0.12525895, -0.015, -0.17552029, 0.12499541, -0.0120002935, -0.17746967, 0.033548206, -0.0036824588, -0.23420508, 0.03270489, -0.002700176, -0.23351468, 0.119039476, 9.313226e-10, -0.17738844, -0.11210847, 9.313226e-10, 0.17813182, 0.10459767, -0.003001174, 0.17999998, 0.112082124, -0.0120002935, 0.17995936, 0.112082124, -0.015, 0.17813182, 0.119039476, -0.015, -0.17738844, 0.03270489, -0.012520066, -0.23351468, 0.033548206, -0.011537784, -0.23420508, 0.031729802, -0.0036824588, -0.2348955, 0, -0.002700176, -0.23355529, 0.10459767, 9.313226e-10, -0.17816009, 0.1120294, 9.313226e-10, -0.17807886, -0.11956656, 9.313226e-10, 0.17805058, -0.11956656, -0.003001174, 0.17991877, -0.11210847, -0.003001174, 0.17995936, -0.10462403, -0.003001174, 0.17999998, 0.10459767, -0.0120002935, 0.17999998, -0.11210847, -0.015, 0.17813182, 0.1120294, -0.015, -0.17807886, 0.10459767, -0.015, -0.17816009, 0, -0.012520066, -0.23355529, 0.031729802, -0.011537784, -0.2348955, -0.11466478, -0.0036824588, -0.2348955, -0.114638425, -0.002700176, -0.23359591, -0.10462403, 9.313226e-10, -0.17816009, -0.1267084, 9.313226e-10, 0.17752263, -0.12662934, -0.003001174, 0.17939079, -0.11956656, -0.0120002935, 0.17991877, -0.11210847, -0.0120002935, 0.17995936, -0.10462403, -0.0120002935, 0.17999998, -0.11956656, -0.015, 0.17805058, -0.10462403, -0.015, -0.17816009, -0.114638425, -0.012520066, -0.23359591, -0.11466478, -0.011537784, -0.2348955, -0.115639865, -0.0036824588, -0.23359591, -0.11205576, 9.313226e-10, -0.17807886, -0.13089862, 9.313226e-10, -0.16881925, -0.12879033, 9.313226e-10, -0.17300232, -0.1252853, 9.313226e-10, -0.17552029, -0.119065836, 9.313226e-10, -0.17738844, -0.13092498, 9.313226e-10, 0.17553264, -0.1306351, -0.003001174, 0.17752263, -0.12662934, -0.0120002935, 0.17939079, -0.1267084, -0.015, 0.17752263, -0.11205576, -0.015, -0.17807886, -0.115639865, -0.011537784, -0.23359591, -0.119065836, -0.015, -0.17738844, -0.1252853, -0.015, -0.17552029, -0.12879033, -0.015, -0.17300232, -0.13089862, -0.015, -0.16881925, -0.1325062, -0.003001174, -0.16849434, -0.13400836, -0.003001174, -0.16126536, -0.13242714, 9.313226e-10, -0.16134658, -0.13258527, -0.003001174, 0.17516711, -0.13258527, 9.313226e-10, 0.1704967, -0.1306351, -0.0120002935, 0.17752263, -0.13092498, -0.015, 0.17553264, -0.1325062, -0.0120002935, -0.16849434, -0.13242714, -0.015, -0.16134658, -0.13400836, -0.0120002935, -0.16126536, -0.13456179, -0.003001174, -0.15293983, -0.13300693, 9.313226e-10, -0.15293983, -0.13258527, -0.0120002935, 0.17516711, -0.13414013, -0.003001174, 0.17037487, -0.13303328, 9.313226e-10, 0.16192749, -0.13258527, -0.015, 0.1704967, -0.13300693, -0.015, -0.15293983, -0.13456179, -0.0120002935, -0.15293983, -0.1346145, -0.003001174, -0.14400512, -0.13308598, 9.313226e-10, -0.14400512, -0.13414013, -0.0120002935, 0.17037487, -0.13456179, -0.003001174, 0.1618869, -0.13308598, 9.313226e-10, 0.15295216, -0.1346145, -0.003001174, 0.15295216, -0.13303328, -0.015, 0.16192749, -0.13308598, -0.015, -0.14400512, -0.1346145, -0.0120002935, -0.14400512, -0.13311234, 9.313226e-10, -0.12601386, -0.13456179, -0.0120002935, 0.1618869, -0.13311234, 9.313226e-10, -0.09900667, -0.1346145, -0.0120002935, 0.15295216, -0.13308598, -0.015, 0.15295216, -0.13311234, -0.015, -0.12601386, -0.13311234, -0.015, -0.09900667)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wo4hk"]
+points = PackedVector3Array(0.3199997, 1.7599998, 1.2799997, -0.3199997, 1.7599998, 1.2799997, 0.3199997, -1.76, 1.2799997, 0.3199997, 1.7599998, -1.2800002, -0.3199997, 1.7599998, -1.2800002, -0.3199997, -1.76, 1.2799997, 0.3199997, -1.76, -1.2800002, -0.3199997, -1.76, -1.2800002)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_234o1"]
+points = PackedVector3Array(0.32000017, 1.9200003, 1.28, -0.32000017, 1.9200003, 1.28, 0.32000017, -1.9199998, 1.28, 0.32000017, 1.9200003, -1.28, -0.32000017, 1.9200003, -1.28, -0.32000017, -1.9199998, 1.28, 0.32000017, -1.9199998, -1.28, -0.32000017, -1.9199998, -1.28)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_krsgc"]
+points = PackedVector3Array(3.2000008, 2.2399995, 0.32, 3.2000008, 2.2399995, -0.32, -3.1999998, 2.2399995, 0.32, 3.2000008, -2.24, 0.32, 3.2000008, -2.24, -0.32, -3.1999998, 2.2399995, -0.32, -3.1999998, -2.24, 0.32, -3.1999998, -2.24, -0.32)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2x1bi"]
+points = PackedVector3Array(4.6399994, 1.9196241, 0.3199997, 4.6399994, 1.9196241, -0.32000065, -4.6399994, 1.9196241, 0.3199997, 4.6399994, -1.9199998, 0.3199997, 4.6399994, -1.9199998, -0.32000065, -4.6399994, 1.9196241, -0.32000065, -4.6399994, -1.9199998, 0.3199997, -4.6399994, -1.9199998, -0.32000065)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rqnht"]
 shader = ExtResource("11_525vb")
@@ -272,8 +270,8 @@ shader_parameter/cirrus_sky_tint_fade = 0.5
 shader_parameter/cirrus_intensity = 10.0
 shader_parameter/cirrus_size = 1.0
 shader_parameter/cirrus_uv = Vector2(0.16, 0.11)
-shader_parameter/cirrus_position1 = Vector2(0.8722262, 0.8722262)
-shader_parameter/cirrus_position2 = Vector2(0.8722262, 0.8722262)
+shader_parameter/cirrus_position1 = Vector2(0.68339604, 0.68339604)
+shader_parameter/cirrus_position2 = Vector2(0.68339604, 0.68339604)
 shader_parameter/cirrus_day_color = Color(0.824, 0.875, 1, 1)
 shader_parameter/cirrus_horizon_light_color = Color(0.98, 0.43, 0.15, 1)
 shader_parameter/cirrus_night_color = Color(0.09, 0.094, 0.129, 1)
@@ -286,7 +284,7 @@ shader_parameter/cumulus_noise_freq = 2.7
 shader_parameter/cumulus_sky_tint_fade = 0.0
 shader_parameter/cumulus_intensity = 0.6
 shader_parameter/cumulus_size = 0.5
-shader_parameter/cumulus_position = Vector2(9.366702, 9.366702)
+shader_parameter/cumulus_position = Vector2(68.50402, 68.50402)
 shader_parameter/cumulus_texture = ExtResource("13_t4x03")
 shader_parameter/cumulus_day_color = Color(0.823529, 0.87451, 1, 1)
 shader_parameter/cumulus_horizon_light_color = Color(0.98, 0.43, 0.15, 1)
@@ -321,6 +319,10 @@ volumetric_fog_enabled = true
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_p5dy6"]
 dof_blur_near_enabled = true
 
+[sub_resource type="FogMaterial" id="FogMaterial_81iov"]
+albedo = Color(0.09239707, 0.09239706, 0.09239706, 1)
+edge_fade = 0.4924577
+
 [node name="Node3D" type="Node3D"]
 
 [node name="VMFNode" type="Node3D" parent="."]
@@ -349,7 +351,7 @@ metadata/surface_prop = "tool_compilenodraw"
 [node name="collision" type="CollisionShape3D" parent="VMFNode/Geometry/surface_prop_tool_compilenodraw"]
 shape = ExtResource("5_hbo4f")
 
-[node name="button86474569772036" parent="VMFNode/Geometry" instance=ExtResource("6_3v6uj")]
+[node name="button267450835108085" parent="VMFNode/Geometry" instance=ExtResource("6_3v6uj")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 20.8, 2.46, 2.562)
 surface_material_override/0 = ExtResource("7_3v6uj")
 
@@ -370,22 +372,6 @@ entity = {
 },
 "id": 1051,
 "origin": Vector3(192, 0, 72),
-"spawnflags": 0
-}
-
-[node name="info_player_start_7369" parent="VMFNode/Entities/infos" instance=ExtResource("4_4bh5q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.56, 1.28, 3.1999998)
-entity = {
-"angles": Vector3(0, 0, 0),
-"classname": "info_player_start",
-"editor": {
-"color": Vector3(0, 255, 0),
-"logicalpos": "[0 3000]",
-"visgroupautoshown": 1,
-"visgroupshown": 1
-},
-"id": 7369,
-"origin": Vector3(928, -160, 64),
 "spawnflags": 0
 }
 
@@ -490,22 +476,6 @@ entity = {
 [node name="decal" parent="VMFNode/Entities/infos/info_overlay_7978" index="1"]
 size = Vector3(0.96, 0.2, 2.18)
 texture_albedo = ExtResource("12_5vu4g")
-
-[node name="info_player_start_12064" parent="VMFNode/Entities/infos" instance=ExtResource("4_4bh5q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.359999, -2.72, -11.559999)
-entity = {
-"angles": Vector3(0, 0, 0),
-"classname": "info_player_start",
-"editor": {
-"color": Vector3(0, 255, 0),
-"logicalpos": "[0 8500]",
-"visgroupautoshown": 1,
-"visgroupshown": 1
-},
-"id": 12064,
-"origin": Vector3(818, 578, -136),
-"spawnflags": 0
-}
 
 [node name="lights" type="Node3D" parent="VMFNode/Entities"]
 
@@ -3774,7 +3744,7 @@ entity = {
 "side": [{
 "id": 9425,
 "lightmapscale": 16,
-"material": "TOOLS/TOOLSTRIGGER",
+"material": "TOOLS/TOOLSINVISIBLE",
 "plane": {
 "points": [Vector3(866, 890, -6), Vector3(926, 890, -6), Vector3(926, 874, -6)],
 "value": Plane(0, 0, 1, -6),
@@ -3802,7 +3772,7 @@ entity = {
 }, {
 "id": 9424,
 "lightmapscale": 16,
-"material": "TOOLS/TOOLSTRIGGER",
+"material": "TOOLS/TOOLSINVISIBLE",
 "plane": {
 "points": [Vector3(866, 874, -86), Vector3(926, 874, -86), Vector3(926, 890, -86)],
 "value": Plane(0, 0, -1, 86),
@@ -3830,7 +3800,7 @@ entity = {
 }, {
 "id": 9423,
 "lightmapscale": 16,
-"material": "TOOLS/TOOLSTRIGGER",
+"material": "TOOLS/TOOLSINVISIBLE",
 "plane": {
 "points": [Vector3(866, 890, -6), Vector3(866, 874, -6), Vector3(866, 874, -86)],
 "value": Plane(-1, 0, 0, -866),
@@ -3858,7 +3828,7 @@ entity = {
 }, {
 "id": 9422,
 "lightmapscale": 16,
-"material": "TOOLS/TOOLSTRIGGER",
+"material": "TOOLS/TOOLSINVISIBLE",
 "plane": {
 "points": [Vector3(926, 890, -86), Vector3(926, 874, -86), Vector3(926, 874, -6)],
 "value": Plane(1, 0, 0, 926),
@@ -3886,7 +3856,7 @@ entity = {
 }, {
 "id": 9421,
 "lightmapscale": 16,
-"material": "TOOLS/TOOLSTRIGGER",
+"material": "TOOLS/TOOLSINVISIBLE",
 "plane": {
 "points": [Vector3(926, 890, -6), Vector3(866, 890, -6), Vector3(866, 890, -86)],
 "value": Plane(0, 1, 0, 890),
@@ -3914,7 +3884,7 @@ entity = {
 }, {
 "id": 9420,
 "lightmapscale": 16,
-"material": "TOOLS/TOOLSTRIGGER",
+"material": "TOOLS/TOOLSINVISIBLE",
 "plane": {
 "points": [Vector3(926, 874, -86), Vector3(866, 874, -86), Vector3(866, 874, -6)],
 "value": Plane(0, -1, 0, -874),
@@ -3950,11 +3920,8 @@ entity = {
 }
 flags = 1024
 
-[node name="mesh" parent="VMFNode/Entities/funcs/func_button_14000/body" index="0"]
-mesh = SubResource("ArrayMesh_w6xft")
-
 [node name="collision" parent="VMFNode/Entities/funcs/func_button_14000/body" index="1"]
-shape = SubResource("ConvexPolygonShape3D_lx1vx")
+shape = SubResource("ConvexPolygonShape3D_w6xft")
 
 [node name="func_door_14047" parent="VMFNode/Entities/funcs" instance=ExtResource("13_vrqbj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.56, 2.3999999, 21.119999)
@@ -4167,10 +4134,10 @@ entity = {
 }
 
 [node name="mesh" parent="VMFNode/Entities/funcs/func_door_14047/body" index="0"]
-mesh = SubResource("ArrayMesh_kf8tg")
+mesh = SubResource("ArrayMesh_lx1vx")
 
 [node name="collision" parent="VMFNode/Entities/funcs/func_door_14047/body" index="1"]
-shape = SubResource("ConvexPolygonShape3D_32tgx")
+shape = SubResource("ConvexPolygonShape3D_kf8tg")
 
 [node name="func_brush_14373" parent="VMFNode/Entities/funcs" instance=ExtResource("24_81iov")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8799996, -0.96, -11.5199995)
@@ -4377,7 +4344,7 @@ entity = {
 flags = 2
 
 [node name="mesh" parent="VMFNode/Entities/funcs/func_brush_14373/body" index="0"]
-mesh = SubResource("ArrayMesh_pnpip")
+mesh = SubResource("ArrayMesh_32tgx")
 
 [node name="props" type="Node3D" parent="VMFNode/Entities"]
 
@@ -4429,11 +4396,900 @@ flags = 256
 mass = 1.0000168
 
 [node name="collision" parent="VMFNode/Entities/props/prop_physics_11769/body" index="0"]
-shape = SubResource("ConvexPolygonShape3D_wo4hk")
+shape = SubResource("ConvexPolygonShape3D_pnpip")
 
 [node name="model" parent="VMFNode/Entities/props/prop_physics_11769/body" index="1" instance=ExtResource("8_5vu4g")]
 layers = 2
 surface_material_override/0 = ExtResource("9_s6y8e")
+
+[node name="envs" type="Node3D" parent="VMFNode/Entities"]
+
+[node name="hello_world_hint_14555" parent="VMFNode/Entities/envs" groups=["hello_world_hint"] instance=ExtResource("28_slt2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.32, 1.5999999, 10.559999)
+entity = {
+"StartDisabled": 0,
+"angles": Vector3(0, 0, 0),
+"caption": "Interact",
+"caption_color": Vector3(255, 255, 255),
+"classname": "env_instructor_hint",
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 1500]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14555,
+"on_screen_icon": 0,
+"origin": Vector3(816, -528, 80),
+"property_2": 10.0,
+"property_4": 0,
+"spawnflags": 0,
+"targetname": "hello_world_hint",
+"timeout": 4
+}
+
+[node name="hey_there_14716" parent="VMFNode/Entities/envs" groups=["hey_there"] instance=ExtResource("28_slt2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.58932, 1.5999999, 0.808814)
+entity = {
+"StartDisabled": 0,
+"angles": Vector3(0, 0, 0),
+"caption": "my little playground to learn how to use Hammer!",
+"caption_color": Vector3(255, 255, 255),
+"classname": "env_instructor_hint",
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 1500]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14716,
+"on_screen_icon": 1,
+"origin": Vector3(429.466, -40.4407, 80),
+"property_2": 10.0,
+"property_4": 0,
+"spawnflags": 0,
+"targetname": "hey_there",
+"timeout": 4
+}
+
+[node name="nice_lighting_14761" parent="VMFNode/Entities/envs" groups=["nice_lighting"] instance=ExtResource("28_slt2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, -0.32, -4.7999997)
+entity = {
+"angles": Vector3(0, 0, 0),
+"caption": "Nice lighting. Flashlight",
+"classname": "env_instructor_hint",
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 3000]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14761,
+"on_screen_icon": 2,
+"origin": Vector3(800, 240, -16),
+"spawnflags": 0,
+"targetname": "nice_lighting",
+"timeout": 3
+}
+
+[node name="orange_box_14791" parent="VMFNode/Entities/envs" groups=["orange_box"] instance=ExtResource("28_slt2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.279999, -2.72, -11.84)
+entity = {
+"angles": Vector3(0, 0, 0),
+"caption": "Interact with the ORANGE BOX",
+"caption_color": Vector3(255, 255, 255),
+"classname": "env_instructor_hint",
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 4500]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14791,
+"on_screen_icon": 0,
+"origin": Vector3(864, 592, -136),
+"spawnflags": 0,
+"targetname": "orange_box",
+"timeout": 4
+}
+
+[node name="triggers" type="Node3D" parent="VMFNode/Entities"]
+
+[node name="trigger_once_14675" parent="VMFNode/Entities/triggers" instance=ExtResource("29_yjd84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.44, 3.04, 8.96)
+entity = {
+"classname": "trigger_once",
+"connections": {
+"OnTrigger": "hello_world_hint,StartHint,,0,-1"
+},
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 500]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14675,
+"origin": Vector3(672, -448, 152),
+"solid": {
+"editor": {
+"color": Vector3(220, 30, 220),
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14672,
+"side": [{
+"id": 9497,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(656, -384, 240), Vector3(688, -384, 240), Vector3(688, -512, 240)],
+"value": Plane(0, 0, 1, 240),
+"vecsum": Vector3(2032, -1280, 720)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(656, -384, 240), Vector3(688, -384, 240), Vector3(688, -512, 240), Vector3(656, -512, 240)]
+}
+}, {
+"id": 9496,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(656, -512, 64), Vector3(688, -512, 64), Vector3(688, -384, 64)],
+"value": Plane(0, 0, -1, -64),
+"vecsum": Vector3(2032, -1408, 192)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(656, -512, 64), Vector3(688, -512, 64), Vector3(688, -384, 64), Vector3(656, -384, 64)]
+}
+}, {
+"id": 9495,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(656, -384, 240), Vector3(656, -512, 240), Vector3(656, -512, 64)],
+"value": Plane(-1, 0, 0, -656),
+"vecsum": Vector3(1968, -1408, 544)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(656, -384, 240), Vector3(656, -512, 240), Vector3(656, -512, 64), Vector3(656, -384, 64)]
+}
+}, {
+"id": 9494,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(688, -384, 64), Vector3(688, -512, 64), Vector3(688, -512, 240)],
+"value": Plane(1, 0, 0, 688),
+"vecsum": Vector3(2064, -1408, 368)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(688, -384, 64), Vector3(688, -512, 64), Vector3(688, -512, 240), Vector3(688, -384, 240)]
+}
+}, {
+"id": 9493,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(688, -384, 240), Vector3(656, -384, 240), Vector3(656, -384, 64)],
+"value": Plane(0, 1, 0, -384),
+"vecsum": Vector3(2000, -1152, 544)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(688, -384, 240), Vector3(656, -384, 240), Vector3(656, -384, 64), Vector3(688, -384, 64)]
+}
+}, {
+"id": 9492,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(688, -512, 64), Vector3(656, -512, 64), Vector3(656, -512, 240)],
+"value": Plane(0, -1, 0, 512),
+"vecsum": Vector3(2000, -1536, 368)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(688, -512, 64), Vector3(656, -512, 64), Vector3(656, -512, 240), Vector3(688, -512, 240)]
+}
+}]
+},
+"spawnflags": 1
+}
+flags = 1
+
+[node name="collision" parent="VMFNode/Entities/triggers/trigger_once_14675/area" index="0"]
+shape = SubResource("ConvexPolygonShape3D_wo4hk")
+
+[node name="trigger_once_14725" parent="VMFNode/Entities/triggers" instance=ExtResource("29_yjd84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12, 3.1999998, 0)
+entity = {
+"classname": "trigger_once",
+"connections": {
+"OnTrigger": "hey_there,StartHint,,0,-1"
+},
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 1500]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14725,
+"origin": Vector3(256, 0, 160),
+"solid": {
+"editor": {
+"color": Vector3(220, 30, 220),
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14720,
+"side": [{
+"id": 9509,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(240, 64, 256), Vector3(272, 64, 256), Vector3(272, -64, 256)],
+"value": Plane(0, 0, 1, 256),
+"vecsum": Vector3(784, 64, 768)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(240, 64, 256), Vector3(272, 64, 256), Vector3(272, -64, 256), Vector3(240, -64, 256)]
+}
+}, {
+"id": 9508,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(240, -64, 64), Vector3(272, -64, 64), Vector3(272, 64, 64)],
+"value": Plane(0, 0, -1, -64),
+"vecsum": Vector3(784, -64, 192)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(240, -64, 64), Vector3(272, -64, 64), Vector3(272, 64, 64), Vector3(240, 64, 64)]
+}
+}, {
+"id": 9507,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(240, 64, 256), Vector3(240, -64, 256), Vector3(240, -64, 64)],
+"value": Plane(-1, 0, 0, -240),
+"vecsum": Vector3(720, -64, 576)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(240, 64, 256), Vector3(240, -64, 256), Vector3(240, -64, 64), Vector3(240, 64, 64)]
+}
+}, {
+"id": 9506,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(272, 64, 64), Vector3(272, -64, 64), Vector3(272, -64, 256)],
+"value": Plane(1, 0, 0, 272),
+"vecsum": Vector3(816, -64, 384)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(272, 64, 64), Vector3(272, -64, 64), Vector3(272, -64, 256), Vector3(272, 64, 256)]
+}
+}, {
+"id": 9505,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(272, 64, 256), Vector3(240, 64, 256), Vector3(240, 64, 64)],
+"value": Plane(0, 1, 0, 64),
+"vecsum": Vector3(752, 192, 576)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(272, 64, 256), Vector3(240, 64, 256), Vector3(240, 64, 64), Vector3(272, 64, 64)]
+}
+}, {
+"id": 9504,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(272, -64, 64), Vector3(240, -64, 64), Vector3(240, -64, 256)],
+"value": Plane(0, -1, 0, 64),
+"vecsum": Vector3(752, -192, 384)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(272, -64, 64), Vector3(240, -64, 64), Vector3(240, -64, 256), Vector3(272, -64, 256)]
+}
+}]
+},
+"spawnflags": 1
+}
+flags = 1
+
+[node name="collision" parent="VMFNode/Entities/triggers/trigger_once_14725/area" index="0"]
+shape = SubResource("ConvexPolygonShape3D_234o1")
+
+[node name="trigger_once_14757" parent="VMFNode/Entities/triggers" instance=ExtResource("29_yjd84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.56, 2.56, 0)
+entity = {
+"classname": "trigger_once",
+"connections": {
+"OnTrigger": "nice_lighting,StartHint,,0,-1"
+},
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 2500]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14757,
+"origin": Vector3(928, 0, 128),
+"solid": {
+"editor": {
+"color": Vector3(220, 30, 220),
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14755,
+"side": [{
+"id": 9521,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(768, 16, 240), Vector3(1088, 16, 240), Vector3(1088, -16, 240)],
+"value": Plane(0, 0, 1, 240),
+"vecsum": Vector3(2944, 16, 720)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(768, 16, 240), Vector3(1088, 16, 240), Vector3(1088, -16, 240), Vector3(768, -16, 240)]
+}
+}, {
+"id": 9520,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(768, -16, 16), Vector3(1088, -16, 16), Vector3(1088, 16, 16)],
+"value": Plane(0, 0, -1, -16),
+"vecsum": Vector3(2944, -16, 48)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(768, -16, 16), Vector3(1088, -16, 16), Vector3(1088, 16, 16), Vector3(768, 16, 16)]
+}
+}, {
+"id": 9519,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(768, 16, 240), Vector3(768, -16, 240), Vector3(768, -16, 16)],
+"value": Plane(-1, 0, 0, -768),
+"vecsum": Vector3(2304, -16, 496)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(768, 16, 240), Vector3(768, -16, 240), Vector3(768, -16, 16), Vector3(768, 16, 16)]
+}
+}, {
+"id": 9518,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(1088, 16, 16), Vector3(1088, -16, 16), Vector3(1088, -16, 240)],
+"value": Plane(1, 0, 0, 1088),
+"vecsum": Vector3(3264, -16, 272)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(1088, 16, 16), Vector3(1088, -16, 16), Vector3(1088, -16, 240), Vector3(1088, 16, 240)]
+}
+}, {
+"id": 9517,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(1088, 16, 240), Vector3(768, 16, 240), Vector3(768, 16, 16)],
+"value": Plane(0, 1, 0, 16),
+"vecsum": Vector3(2624, 48, 496)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(1088, 16, 240), Vector3(768, 16, 240), Vector3(768, 16, 16), Vector3(1088, 16, 16)]
+}
+}, {
+"id": 9516,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(1088, -16, 16), Vector3(768, -16, 16), Vector3(768, -16, 240)],
+"value": Plane(0, -1, 0, 16),
+"vecsum": Vector3(2624, -48, 272)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(1088, -16, 16), Vector3(768, -16, 16), Vector3(768, -16, 240), Vector3(1088, -16, 240)]
+}
+}]
+},
+"spawnflags": 1
+}
+flags = 1
+
+[node name="collision" parent="VMFNode/Entities/triggers/trigger_once_14757/area" index="0"]
+shape = SubResource("ConvexPolygonShape3D_krsgc")
+
+[node name="trigger_once_14785" parent="VMFNode/Entities/triggers" instance=ExtResource("29_yjd84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.72, -0.96, -10.559999)
+entity = {
+"classname": "trigger_once",
+"connections": {
+"OnTrigger": "orange_box,StartHint,,0,-1"
+},
+"editor": {
+"color": Vector3(220, 30, 220),
+"logicalpos": "[0 4000]",
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14785,
+"origin": Vector3(936, 528, -48),
+"solid": {
+"editor": {
+"color": Vector3(220, 30, 220),
+"visgroupautoshown": 1,
+"visgroupshown": 1
+},
+"id": 14778,
+"side": [{
+"id": 9533,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(704, 544, 48), Vector3(1168, 544, 48), Vector3(1168, 512, 48)],
+"value": Plane(0, 0, 1, 48),
+"vecsum": Vector3(3040, 1600, 144)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(704, 544, 48), Vector3(1168, 544, 48), Vector3(1168, 512, 48), Vector3(704, 512, 48)]
+}
+}, {
+"id": 9532,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(704, 512, -144), Vector3(1168, 512, -144), Vector3(1168, 544, -144)],
+"value": Plane(0, 0, -1, 144),
+"vecsum": Vector3(3040, 1568, -432)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": -1.0,
+"z": 0.0
+},
+"vertices_plus": {
+"v": [Vector3(704, 512, -144), Vector3(1168, 512, -144), Vector3(1168, 544, -144), Vector3(704, 544, -144)]
+}
+}, {
+"id": 9531,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(704, 544, 48), Vector3(704, 512, 48), Vector3(704, 512, -144)],
+"value": Plane(-1, 0, 0, -704),
+"vecsum": Vector3(2112, 1568, -48)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(704, 544, 48), Vector3(704, 512, 48), Vector3(704, 512, -144), Vector3(704, 544, -144)]
+}
+}, {
+"id": 9530,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(1168, 544, -144), Vector3(1168, 512, -144), Vector3(1168, 512, 48)],
+"value": Plane(1, 0, 0, 1168),
+"vecsum": Vector3(3504, 1568, -240)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 1.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(1168, 544, -144), Vector3(1168, 512, -144), Vector3(1168, 512, 48), Vector3(1168, 544, 48)]
+}
+}, {
+"id": 9529,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(1168, 544, 48), Vector3(704, 544, 48), Vector3(704, 544, -144)],
+"value": Plane(0, 1, 0, 544),
+"vecsum": Vector3(2576, 1632, -48)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(1168, 544, 48), Vector3(704, 544, 48), Vector3(704, 544, -144), Vector3(1168, 544, -144)]
+}
+}, {
+"id": 9528,
+"lightmapscale": 16,
+"material": "TOOLS/TOOLSTRIGGER",
+"plane": {
+"points": [Vector3(1168, 512, -144), Vector3(704, 512, -144), Vector3(704, 512, 48)],
+"value": Plane(0, -1, 0, -512),
+"vecsum": Vector3(2576, 1536, -240)
+},
+"rotation": 0,
+"smoothing_groups": 0,
+"uaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 1.0,
+"y": 0.0,
+"z": 0.0
+},
+"vaxis": {
+"scale": 0.25,
+"shift": 0.0,
+"x": 0.0,
+"y": 0.0,
+"z": -1.0
+},
+"vertices_plus": {
+"v": [Vector3(1168, 512, -144), Vector3(704, 512, -144), Vector3(704, 512, 48), Vector3(1168, 512, 48)]
+}
+}]
+},
+"spawnflags": 1
+}
+flags = 1
+
+[node name="collision" parent="VMFNode/Entities/triggers/trigger_once_14785/area" index="0"]
+shape = SubResource("ConvexPolygonShape3D_2x1bi")
 
 [node name="Sky3D" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_sqtar")
@@ -4517,12 +5373,43 @@ transform = Transform3D(0.8660254, 3.7252903e-09, 0.5, -3.7252903e-09, 1, 2.7939
 mesh = ExtResource("21_525vb")
 skeleton = NodePath("../Shelf2")
 
+[node name="FogVolume" type="FogVolume" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.594, -0.7623856, -21.921968)
+size = Vector3(5.2145996, 4.3528137, 7.907593)
+material = SubResource("FogMaterial_81iov")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." node_paths=PackedStringArray("target", "arrow")]
+visible = false
+script = ExtResource("42_slt2r")
+target = NodePath("")
+arrow = NodePath("Control/ColorRect")
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 235.0
+offset_right = 577.0
+offset_bottom = 421.0
+pivot_offset = Vector2(20, 93)
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 1, 1, 1)
+
 [editable path="VMFNode/Entities/infos/info_player_start_1051"]
-[editable path="VMFNode/Entities/infos/info_player_start_7369"]
 [editable path="VMFNode/Entities/infos/info_overlay_7893"]
 [editable path="VMFNode/Entities/infos/info_overlay_7960"]
 [editable path="VMFNode/Entities/infos/info_overlay_7978"]
-[editable path="VMFNode/Entities/infos/info_player_start_12064"]
 [editable path="VMFNode/Entities/lights/light_spot_1060"]
 [editable path="VMFNode/Entities/lights/light_2843"]
 [editable path="VMFNode/Entities/lights/light_spot_2937"]
@@ -4545,3 +5432,11 @@ skeleton = NodePath("../Shelf2")
 [editable path="VMFNode/Entities/funcs/func_door_14047"]
 [editable path="VMFNode/Entities/funcs/func_brush_14373"]
 [editable path="VMFNode/Entities/props/prop_physics_11769"]
+[editable path="VMFNode/Entities/envs/hello_world_hint_14555"]
+[editable path="VMFNode/Entities/envs/hey_there_14716"]
+[editable path="VMFNode/Entities/envs/nice_lighting_14761"]
+[editable path="VMFNode/Entities/envs/orange_box_14791"]
+[editable path="VMFNode/Entities/triggers/trigger_once_14675"]
+[editable path="VMFNode/Entities/triggers/trigger_once_14725"]
+[editable path="VMFNode/Entities/triggers/trigger_once_14757"]
+[editable path="VMFNode/Entities/triggers/trigger_once_14785"]

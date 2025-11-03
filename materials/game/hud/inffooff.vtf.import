@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://bdwiuibbexmia"
+path="res://.godot/imported/inffooff.vtf-7343400bced3c3a1554a73f6466c1140.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/hud/inffooff.vtf"
+dest_files=["res://.godot/imported/inffooff.vtf-7343400bced3c3a1554a73f6466c1140.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

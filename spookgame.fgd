@@ -1,0 +1,26 @@
+@PointClass base(Targetname, Angles) iconsprite("game/hud/inffoof.vmt") = env_instructor_hint : "Description of the entity" [
+	spawnflags(Flags) = [
+
+	]
+
+	caption(string) : "Caption" : "Hello world" : "The text showed in the hint"
+	caption_color(color255) : "Caption Color" : "" : "The text color showed in the hint"
+	on_screen_icon(choices) : "On Screen Icon" : 1 = [
+		"0" : "Keybind"
+		"1" : "Info"
+		"2" : "Keybind 2"	]
+	bound_key(string) : "Bound Key" : "" : "The key icon that will be showed if the On Screen Icon is KEYBIND. does nothing lmao"
+	target_entity(target_destination) : "Target Entity" : "" : "If set, an arrow will be shown pointing towards that entity. does nothing lmao"
+	timeout(integer) : "Timeout" : 0 : "The timeout to hide the hint. If its 0, the hint won't hide until manually calling EndHint"
+	StartDisabled(choices) : "Start Disabled" : 0 = [		"0" : "No"		"1" : "Yes"	]
+
+
+
+	input EndHint(void) : ""
+	input StartHint(void) : ""
+	input Toggle(void) : ""
+	input Enable(void) : ""
+	input Disable(void) : ""
+	input Kill(void) : ""
+]
+

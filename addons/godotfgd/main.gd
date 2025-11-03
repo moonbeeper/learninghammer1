@@ -39,6 +39,7 @@ const TYPE_DICTIONARY = {
 	TYPE_OBJECT: "target_destination",
 	TYPE_VECTOR3: "angle",
 	TYPE_CHOICES: "choices",
+	TYPE_COLOR: "color255",
 };
 
 var script_hashes = {};
