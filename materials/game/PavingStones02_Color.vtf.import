@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://c7jt1yi5i7ajt"
+path="res://.godot/imported/PavingStones02_Color.vtf-7947a15be73b2d80906e82a9f9bc238f.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/PavingStones02_Color.vtf"
+dest_files=["res://.godot/imported/PavingStones02_Color.vtf-7947a15be73b2d80906e82a9f9bc238f.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

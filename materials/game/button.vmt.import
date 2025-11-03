@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://oewsfkp6nl2a"
+path="res://.godot/imported/button.vmt-931335a02e0fc7799a6de05f58e3098f.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/button.vmt"
+dest_files=["res://.godot/imported/button.vmt-931335a02e0fc7799a6de05f58e3098f.vmt.res"]
+
+[params]
+

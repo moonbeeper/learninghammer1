@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://b4gj53h5cpbl2"
+path="res://.godot/imported/NiceCard_Albedo.vtf-83cc4b8a6c05d869b3e33bd0a68789fe.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/nicecard/NiceCard_Albedo.vtf"
+dest_files=["res://.godot/imported/NiceCard_Albedo.vtf-83cc4b8a6c05d869b3e33bd0a68789fe.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

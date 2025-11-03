@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://dagpop6k8ecwf"
+path="res://.godot/imported/button.vtf-25a8abbf1e73a1b9ca0da31bd5c3d6f5.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/button.vtf"
+dest_files=["res://.godot/imported/button.vtf-25a8abbf1e73a1b9ca0da31bd5c3d6f5.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

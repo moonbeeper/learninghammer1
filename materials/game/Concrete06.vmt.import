@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://dt6gclut5k04n"
+path="res://.godot/imported/Concrete06.vmt-a9486cf29c8e3c7aac99393734ae82a9.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/Concrete06.vmt"
+dest_files=["res://.godot/imported/Concrete06.vmt-a9486cf29c8e3c7aac99393734ae82a9.vmt.res"]
+
+[params]
+

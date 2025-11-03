@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://dokepge6x4q5l"
+path="res://.godot/imported/Concrete044.vmt-a9f4aac61576224c94d60f0905276483.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/Concrete044.vmt"
+dest_files=["res://.godot/imported/Concrete044.vmt-a9f4aac61576224c94d60f0905276483.vmt.res"]
+
+[params]
+

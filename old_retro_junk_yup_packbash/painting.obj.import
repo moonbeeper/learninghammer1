@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4mdfwg1a8cju"
+path="res://.godot/imported/painting.obj-0dadb41215b156e51d17d1b8310d87c1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/painting.obj-0dadb41215b156e51d17d1b8310d87c1.mesh"]
+
+source_file="res://old_retro_junk_yup_packbash/painting.obj"
+dest_files=["res://.godot/imported/painting.obj-0dadb41215b156e51d17d1b8310d87c1.mesh", "res://.godot/imported/painting.obj-0dadb41215b156e51d17d1b8310d87c1.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

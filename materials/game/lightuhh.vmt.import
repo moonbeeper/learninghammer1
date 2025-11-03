@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://dh7wp5byjb70w"
+path="res://.godot/imported/lightuhh.vmt-2ff879a8070e019da614e67d735632c6.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/lightuhh.vmt"
+dest_files=["res://.godot/imported/lightuhh.vmt-2ff879a8070e019da614e67d735632c6.vmt.res"]
+
+[params]
+

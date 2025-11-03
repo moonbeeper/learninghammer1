@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://dcut4myomjjq6"
+path="res://.godot/imported/yellowstripes.vmt-3063e6f8f0598a4d8a1d345f628f9957.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/decals/yellowstripes.vmt"
+dest_files=["res://.godot/imported/yellowstripes.vmt-3063e6f8f0598a4d8a1d345f628f9957.vmt.res"]
+
+[params]
+

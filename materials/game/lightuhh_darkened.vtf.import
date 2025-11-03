@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://dy5d6jj7n5lk2"
+path="res://.godot/imported/lightuhh_darkened.vtf-8bdc9b2baec3bf069ec4d93e60c06cea.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/lightuhh_darkened.vtf"
+dest_files=["res://.godot/imported/lightuhh_darkened.vtf-8bdc9b2baec3bf069ec4d93e60c06cea.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://co5c3na8pv0qv"
+path="res://.godot/imported/Plaster01_Color.vtf-eee1c12f11099488a510dc0e455fdd22.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/Plaster01_Color.vtf"
+dest_files=["res://.godot/imported/Plaster01_Color.vtf-eee1c12f11099488a510dc0e455fdd22.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

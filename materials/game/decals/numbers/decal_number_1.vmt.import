@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://cialbul4bq3dv"
+path="res://.godot/imported/decal_number_1.vmt-d25cfa3bf527268d54d58da2cc74c9f3.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/decals/numbers/decal_number_1.vmt"
+dest_files=["res://.godot/imported/decal_number_1.vmt-d25cfa3bf527268d54d58da2cc74c9f3.vmt.res"]
+
+[params]
+

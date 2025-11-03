@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://doqe4eoms7dwx"
+path="res://.godot/imported/Concrete032_1K-PNG_Color.vtf-3763f99e6a8b15568883897550d6b417.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/Concrete032_1K-PNG_Color.vtf"
+dest_files=["res://.godot/imported/Concrete032_1K-PNG_Color.vtf-3763f99e6a8b15568883897550d6b417.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://b7h8q8bv4siyo"]
+
+[ext_resource type="Texture2D" uid="uid://jmgnurqqs62t" path="res://materials/game/Concrete07_AmbientOcclusion.png" id="AmbientOcclusion"]
+[ext_resource type="Texture2D" uid="uid://cxil6wanosl6m" path="res://materials/game/Concrete07_Color.png" id="Color"]
+[ext_resource type="Texture2D" uid="uid://c5wd7wc3thux1" path="res://materials/game/Concrete07_Displacement.png" id="Displacement"]
+[ext_resource type="Texture2D" uid="uid://b3mxm5tljkn1v" path="res://materials/game/Concrete07_NormalGL.png" id="NormalGL"]
+[ext_resource type="Texture2D" uid="uid://dueuc6tv6eu32" path="res://materials/game/Concrete07_Roughness.png" id="Roughness"]
+
+[resource]
+albedo_texture = ExtResource("Color")
+roughness_texture = ExtResource("Roughness")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("NormalGL")
+ao_enabled = true
+ao_texture = ExtResource("AmbientOcclusion")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("Displacement")

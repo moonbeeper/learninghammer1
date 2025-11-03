@@ -2,3 +2,5 @@
 .godot/
 /android/
 .current_process
+_WORK
+*.tmp

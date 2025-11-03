@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://3rthnj3ec4fg"]
+
+[ext_resource type="Script" uid="uid://b7pinsikeuoct" path="res://entities/func_physbox.gd" id="1_1axbg"]
+
+[node name="func_physbox" type="Node3D"]
+script = ExtResource("1_1axbg")
+
+[node name="body" type="RigidBody3D" parent="." groups=["pickupable"]]
+freeze_mode = 1
+continuous_cd = true
+
+[node name="mesh" type="MeshInstance3D" parent="body"]
+skeleton = NodePath("../..")
+
+[node name="collision" type="CollisionShape3D" parent="body"]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="MDL"
+type="PackedScene"
+uid="uid://bt1pk3icd4anj"
+path="res://.godot/imported/nicecard.mdl-174087525613460e2dcb61afec99548b.scn"
+
+[deps]
+
+source_file="res://models/game/nicecard.mdl"
+dest_files=["res://.godot/imported/nicecard.mdl-174087525613460e2dcb61afec99548b.scn"]
+
+[params]
+
+use_global_scale=true
+scale=0.02
+additional_rotation=Vector3(0, 0, 0)
+generate_occluder=false
+generate_lods=true
+primitive_occluder=false
+primitive_occluder_scale=Vector3(1, 1, 1)
+gi_mode=1

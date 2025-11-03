@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://cfuof0knnxnxv"
+path="res://.godot/imported/Metal018_Color.vtf-47ff6a3b4cd1c374b10563f2cf5314e1.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/Metal018_Color.vtf"
+dest_files=["res://.godot/imported/Metal018_Color.vtf-47ff6a3b4cd1c374b10563f2cf5314e1.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

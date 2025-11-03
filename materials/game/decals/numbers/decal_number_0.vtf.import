@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://cdkyjpfiyncg"
+path="res://.godot/imported/decal_number_0.vtf-ff283c4489b029c60edaeb054142a80f.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/decals/numbers/decal_number_0.vtf"
+dest_files=["res://.godot/imported/decal_number_0.vtf-ff283c4489b029c60edaeb054142a80f.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

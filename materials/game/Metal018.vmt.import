@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://c6ohdpx12qgxk"
+path="res://.godot/imported/Metal018.vmt-8bb3452b682e27c4906ac2218484634f.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/Metal018.vmt"
+dest_files=["res://.godot/imported/Metal018.vmt-8bb3452b682e27c4906ac2218484634f.vmt.res"]
+
+[params]
+

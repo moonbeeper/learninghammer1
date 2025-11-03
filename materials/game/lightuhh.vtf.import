@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://umralfiebso"
+path="res://.godot/imported/lightuhh.vtf-df158bcf2b907901727c1a0a180f5a9c.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/lightuhh.vtf"
+dest_files=["res://.godot/imported/lightuhh.vtf-df158bcf2b907901727c1a0a180f5a9c.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

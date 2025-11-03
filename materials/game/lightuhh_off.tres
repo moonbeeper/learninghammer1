@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://djthklhwbn8ci"]
+
+[ext_resource type="Texture2D" uid="uid://bm7jruhbng7rs" path="res://materials/game/lightuhh.png" id="1_8losb"]
+[ext_resource type="Texture2D" uid="uid://bqmxh2g2p053f" path="res://materials/game/lightuhh_darkened.png" id="1_sxrct"]
+
+[resource]
+albedo_texture = ExtResource("1_sxrct")
+emission = Color(0.0142752165, 0.014275219, 0.014275211, 1)
+emission_operator = 1
+emission_texture = ExtResource("1_8losb")

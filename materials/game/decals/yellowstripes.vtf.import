@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://e65qimtos0ra"
+path="res://.godot/imported/yellowstripes.vtf-0f3832c5226ff890950bff8f99854f4c.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/decals/yellowstripes.vtf"
+dest_files=["res://.godot/imported/yellowstripes.vtf-0f3832c5226ff890950bff8f99854f4c.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1

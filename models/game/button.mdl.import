@@ -1,0 +1,22 @@
+[remap]
+
+importer="MDL"
+type="PackedScene"
+uid="uid://bvx55r6osbspo"
+path="res://.godot/imported/button.mdl-914752e891b26c2c2eb04c7aee6b4326.scn"
+
+[deps]
+
+source_file="res://models/game/button.mdl"
+dest_files=["res://.godot/imported/button.mdl-914752e891b26c2c2eb04c7aee6b4326.scn"]
+
+[params]
+
+use_global_scale=true
+scale=0.02
+additional_rotation=Vector3(0, 0, 0)
+generate_occluder=false
+generate_lods=true
+primitive_occluder=false
+primitive_occluder_scale=Vector3(1, 1, 1)
+gi_mode=1

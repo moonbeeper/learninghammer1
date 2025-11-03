@@ -1,0 +1,24 @@
+[gd_resource type="StandardMaterial3D" load_steps=7 format=3 uid="uid://mh80cpkaic3c"]
+
+[ext_resource type="Texture2D" uid="uid://ovcqbtfoiahu" path="res://materials/game/Concrete044_Color.jpg" id="1_dx6gr"]
+[ext_resource type="Texture2D" uid="uid://b5ob5ve5dexoy" path="res://materials/game/Concrete044_AmbientOcclusion.jpg" id="2_jmppl"]
+[ext_resource type="Texture2D" uid="uid://dcalkkdmkrdmr" path="res://materials/game/Concrete044_Displacement.jpg" id="3_hepo1"]
+[ext_resource type="Texture2D" uid="uid://c6wxxohm40yo" path="res://materials/game/Concrete044_Metalness.jpg" id="4_7pb1d"]
+[ext_resource type="Texture2D" uid="uid://dlii735gxmsy2" path="res://materials/game/Concrete044_NormalGL.jpg" id="5_f0gnu"]
+[ext_resource type="Texture2D" uid="uid://bw4xolmhf6wcw" path="res://materials/game/Concrete044_Roughness.jpg" id="6_nf2sr"]
+
+[resource]
+albedo_texture = ExtResource("1_dx6gr")
+metallic = 1.0
+metallic_texture = ExtResource("4_7pb1d")
+metallic_texture_channel = 4
+roughness_texture = ExtResource("6_nf2sr")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("5_f0gnu")
+ao_enabled = true
+ao_texture = ExtResource("2_jmppl")
+ao_texture_channel = 4
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("3_hepo1")

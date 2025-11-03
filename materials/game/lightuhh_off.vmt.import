@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://cc5jeku0f4pom"
+path="res://.godot/imported/lightuhh_off.vmt-1b72d34e804ad5d2903d76be4a82a479.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/lightuhh_off.vmt"
+dest_files=["res://.godot/imported/lightuhh_off.vmt-1b72d34e804ad5d2903d76be4a82a479.vmt.res"]
+
+[params]
+

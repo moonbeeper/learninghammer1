@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dulquxe0hf1ql"]
+
+[ext_resource type="Texture2D" uid="uid://lfmi4ff6q26n" path="res://materials/game/decals/numbers/decal_number_4.png" id="1_j03pr"]
+
+[resource]
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_j03pr")

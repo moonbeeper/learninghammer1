@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://3l6hij8mkwab"
+path="res://.godot/imported/ShutDoor.vmt-a7ae5fc3c421a88c4ff4745f3968d994.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/ShutDoor.vmt"
+dest_files=["res://.godot/imported/ShutDoor.vmt-a7ae5fc3c421a88c4ff4745f3968d994.vmt.res"]
+
+[params]
+

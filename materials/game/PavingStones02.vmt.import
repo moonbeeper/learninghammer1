@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://cd2efg6v82h7t"
+path="res://.godot/imported/PavingStones02.vmt-d75cde61ee5cb508aaccee3c64002f58.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/PavingStones02.vmt"
+dest_files=["res://.godot/imported/PavingStones02.vmt-d75cde61ee5cb508aaccee3c64002f58.vmt.res"]
+
+[params]
+

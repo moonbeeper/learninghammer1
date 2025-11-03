@@ -1,0 +1,14 @@
+[remap]
+
+importer="VMT"
+type="Material"
+uid="uid://b3d4wrknjerpp"
+path="res://.godot/imported/nicecard.vmt-3a442e0b541417f7fa4962c66f64604e.vmt.res"
+
+[deps]
+
+source_file="res://materials/game/nicecard/nicecard.vmt"
+dest_files=["res://.godot/imported/nicecard.vmt-3a442e0b541417f7fa4962c66f64604e.vmt.res"]
+
+[params]
+

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://n1tecgfaqpbk"]
+
+[ext_resource type="Script" uid="uid://cphw3snq8lh41" path="res://entities/func_button.gd" id="1_ilt2y"]
+
+[node name="func_button" type="Node3D"]
+script = ExtResource("1_ilt2y")
+metadata/_custom_type_script = "uid://3tjpx1fv0g56"
+
+[node name="body" type="StaticBody3D" parent="."]
+
+[node name="mesh" type="MeshInstance3D" parent="body"]
+visible = false
+cast_shadow = 0
+skeleton = NodePath("../..")
+
+[node name="collision" type="CollisionShape3D" parent="body"]

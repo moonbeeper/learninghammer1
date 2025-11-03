@@ -1,0 +1,15 @@
+[remap]
+
+importer="VTF"
+type="Texture"
+uid="uid://b6xafcoknq1v5"
+path="res://.godot/imported/ShutDoor_Albedo.vtf-61e1e196b7c9e5596e70cb0163f1ccd8.vtf.res"
+
+[deps]
+
+source_file="res://materials/game/ShutDoor_Albedo.vtf"
+dest_files=["res://.godot/imported/ShutDoor_Albedo.vtf-61e1e196b7c9e5596e70cb0163f1ccd8.vtf.res"]
+
+[params]
+
+srgb_conversion_method=1
