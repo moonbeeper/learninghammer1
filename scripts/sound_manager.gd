@@ -1,6 +1,6 @@
 extends Node
 
-const SOUND_FOLDER = "res://sound/";
+const SOUND_FOLDER = "res://sounds/";
 
 var sound_cache: Dictionary = {};
 

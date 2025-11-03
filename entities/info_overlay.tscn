@@ -10,3 +10,4 @@ cast_shadow = 0
 
 [node name="decal" type="Decal" parent="."]
 size = Vector3(2, 0.2, 2)
+cull_mask = 1048573

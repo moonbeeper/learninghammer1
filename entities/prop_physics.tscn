@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgwt8htlo4a8w"]
+
+[ext_resource type="Script" uid="uid://djlkii6tqkqhw" path="res://entities/prop_physics.gd" id="1_4pry7"]
+
+[node name="prop_physics" type="Node3D"]
+script = ExtResource("1_4pry7")
+metadata/_custom_type_script = "uid://3tjpx1fv0g56"
+
+[node name="body" type="RigidBody3D" parent="." groups=["pickupable"]]
+freeze_mode = 1
+continuous_cd = true
+
+[node name="collision" type="CollisionShape3D" parent="body"]

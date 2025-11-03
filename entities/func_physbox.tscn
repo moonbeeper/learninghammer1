@@ -10,6 +10,7 @@ freeze_mode = 1
 continuous_cd = true
 
 [node name="mesh" type="MeshInstance3D" parent="body"]
+layers = 2
 skeleton = NodePath("../..")
 
 [node name="collision" type="CollisionShape3D" parent="body"]
